@@ -35,7 +35,12 @@ class ViewController: UITableViewController {
         
         let friend = friends[indexPath.row]
         cell.textLabel?.text = friend.name
-        cell.detailTextLabel?.text = friend.timeZone.identifier
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.timeZone = friend.timeZone
+        dateFormatter.timeStyle = .short
+        
+        cell.detailTextLabel?.text = dateFormatter.string(from: Date())
         
         return cell
     }
