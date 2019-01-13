@@ -29,4 +29,9 @@ class MainCoordinator: Coordinator {
         vc.friend = friend
         navigationController.pushViewController(vc, animated: true)
     }
+    
+    func updateFriend(friend: Friend) {
+        guard let vc = navigationController.viewControllers.first as? ViewController else { return }
+        vc.updateFriend(friend: friend)
+    }
 }
