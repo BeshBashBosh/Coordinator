@@ -49,7 +49,7 @@ class FriendViewController: UITableViewController {
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
+        super.viewWillDisappear(animated)
         delegate?.updateFriend(friend: friend)
     }
 
