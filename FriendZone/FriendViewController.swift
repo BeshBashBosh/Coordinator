@@ -18,5 +18,7 @@ class FriendViewController: UITableViewController {
 
     }
 
-
+    @IBAction func nameChanged(_ sender: UITextField) {
+    }
+    
 }

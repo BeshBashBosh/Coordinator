@@ -69,7 +69,27 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uxo-3z-gxq" id="QRh-UP-p78">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="John Appleseed" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="8gL-Rr-wA4">
+                                            <rect key="frame" x="16" y="16" width="343" height="11.5"/>
+                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <action selector="nameChanged:" destination="qPY-tb-8bZ" eventType="editingChanged" id="cXW-2Q-o6E"/>
+                                            </connections>
+                                        </textField>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="8gL-Rr-wA4" secondAttribute="bottom" constant="16" id="3X2-Jp-ZNy"/>
+                                        <constraint firstItem="8gL-Rr-wA4" firstAttribute="leading" secondItem="QRh-UP-p78" secondAttribute="leading" constant="16" id="ESh-SK-tFz"/>
+                                        <constraint firstAttribute="trailing" secondItem="8gL-Rr-wA4" secondAttribute="trailing" constant="16" id="H8e-y3-KUl"/>
+                                        <constraint firstItem="8gL-Rr-wA4" firstAttribute="top" secondItem="QRh-UP-p78" secondAttribute="top" constant="16" id="wI2-EQ-BVy"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="textField" destination="8gL-Rr-wA4" id="J9B-TH-cCp"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="T34-ZT-ukx" detailTextLabel="Fth-LB-A9v" style="IBUITableViewCellStyleSubtitle" id="4Xa-j2-Fzr">
                                 <rect key="frame" x="0.0" y="72" width="375" height="44"/>
