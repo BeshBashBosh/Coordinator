@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FriendViewController: UITableViewController {
+class FriendViewController: UITableViewController, Storyboarded {
 
     weak var delegate: ViewController?
     var friend: Friend!
