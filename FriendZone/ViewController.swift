@@ -12,6 +12,7 @@ class ViewController: UITableViewController {
     
     // MARK: - Properties
     var friends = [Friend]()
+    var selectedFriend: Int?
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
@@ -79,11 +80,18 @@ class ViewController: UITableViewController {
         guard let vc = storyboard?.instantiateViewController(withIdentifier: "FriendViewController") as? FriendViewController else {
             fatalError("Unable to create FriendViewController")
         }
-        
+        selectedFriend = position
         vc.delegate = self
         vc.friend = friend
         
         navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    func updateFriend(friend: Friend) {
+        guard let selectedFriend = selectedFriend else { return }
+        friends[selectedFriend] = friend
+        tableView.reloadData()
+        saveData()
     }
 }
 
