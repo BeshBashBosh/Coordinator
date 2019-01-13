@@ -15,6 +15,15 @@ extension Int {
         formatter.unitsStyle = .positional
         
         let formattedString = formatter.string(from: TimeInterval(self)) ?? "0"
-        return formattedString
+        
+        if formattedString == "0" {
+            return "GMT"
+        } else {
+            if formattedString.hasPrefix("-") {
+                return "GMT\(formattedString)"
+            } else {
+                return "GMT+\(formattedString)"
+            }
+        }
     }
 }

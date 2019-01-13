@@ -86,7 +86,7 @@ class FriendViewController: UITableViewController {
             cell.textLabel?.text = timeZone.identifier
             
             let timeDifference = timeZone.secondsFromGMT(for: Date())
-            cell.detailTextLabel?.text = String(timeDifference)
+            cell.detailTextLabel?.text = String(timeDifference.timeString())
             
             if indexPath.row == selectedTimeZone {
                 cell.accessoryType = .checkmark
