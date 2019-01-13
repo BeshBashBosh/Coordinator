@@ -15,6 +15,7 @@
 		ED78D3C821EBB899000095BD /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED78D3C721EBB899000095BD /* Friend.swift */; };
 		ED78D3CA21EBBC6B000095BD /* FriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED78D3C921EBBC6B000095BD /* FriendViewController.swift */; };
 		ED78D3CC21EBBE23000095BD /* TextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED78D3CB21EBBE23000095BD /* TextTableViewCell.swift */; };
+		ED78D3CE21EBC58A000095BD /* int-TimeFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED78D3CD21EBC58A000095BD /* int-TimeFormatting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		ED78D3C721EBB899000095BD /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		ED78D3C921EBBC6B000095BD /* FriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendViewController.swift; sourceTree = "<group>"; };
 		ED78D3CB21EBBE23000095BD /* TextTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextTableViewCell.swift; sourceTree = "<group>"; };
+		ED78D3CD21EBC58A000095BD /* int-TimeFormatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "int-TimeFormatting.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				ED78D3B721EBB776000095BD /* ViewController.swift */,
 				ED78D3C721EBB899000095BD /* Friend.swift */,
 				ED78D3C921EBBC6B000095BD /* FriendViewController.swift */,
+				ED78D3CD21EBC58A000095BD /* int-TimeFormatting.swift */,
 				ED78D3CB21EBBE23000095BD /* TextTableViewCell.swift */,
 				ED78D3B921EBB776000095BD /* Main.storyboard */,
 				ED78D3BC21EBB77B000095BD /* Assets.xcassets */,
@@ -149,6 +152,7 @@
 				ED78D3B821EBB776000095BD /* ViewController.swift in Sources */,
 				ED78D3B621EBB776000095BD /* AppDelegate.swift in Sources */,
 				ED78D3CC21EBBE23000095BD /* TextTableViewCell.swift in Sources */,
+				ED78D3CE21EBC58A000095BD /* int-TimeFormatting.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
